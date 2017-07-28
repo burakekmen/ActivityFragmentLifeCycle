@@ -55,3 +55,13 @@ silerek README.md içerisine bu bilgileri yazınız.
 16. Yazdığınzı kodları Push'layınız. Ve bu adres üzerindeki ana projeye Pull Request (PR) atınız.
 
 # En başarılı PR proje'ye "orjinal cevap" olarak kabul edilecektir.
+
+***************************************
+12. Bir Fragment'ı XML içerisine eklemek kod ile eklemeye nazaran daha önce çizdirilir. Mesela activity_main.xml dosyasını çizerken içerisinde bulunan diğer elementlerin de çizim işlemleri yapılması için onların tanımlaması yapılır. XML içerisindeki tanımlamalar bittiğinde onCreate() içerisindeki kodlar devreye girer. Ve bu aşamada da koddaki fragment taımlanır ve aktif edilir.
+
+13. Görev tanımı kesin ve birbirinden farklı olan ekranlar için Activity, İçerisinde bulunan görev benzer ve birçok işlemde de ekran içerisinde çok fazla içerik ve tasarım değişmiyor ise Fragment kullanılması daha uygun görülür.
+
+14. Fragment dosyamızı eğer işlemi önemli ise XML dosyamıza gömebiliriz. Eğer activity_main.xml dosyası yaratıldıktan sonra çalışmasında sıkıntı olmayacak bir durumda ise kod yöntemi ile eklenebilir.
+
+15. XML içerisine gömdüğümüz fragment dosyamız daha hızlı oluşturulup yanıt verir. Kapsamlı ve büyük projeler için gözardı edilemeyecek artı bir özellik olarak görülebilir. Kod ile eklenen fragment dosyası onCreate() metodundan sonra aktive duruma geçeceği için geç devreye girer ve böyle bir durum büyük projelerde can sıkıcı bir özellik olabilir.
+	Küçük çaplı projeler için bu iki yöntem arasından herhangi birini seçsekte arada çok fazla bir fark göremeyiz. Bu farklar projenin boyutu artınca kendini gösterecektir.
